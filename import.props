@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemDefinitionGroup>
+	
+		<ClCompile>
+			<!-- Path to headers -->
+			<AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+
+			<!-- Additional preprocessor definitions-->
+			<PreprocessorDefinitions>;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+		</ClCompile>
+
+		<Link>
+			<!-- Path to .lib files-->
+			<AdditionalDependencies>$(MSBuildThisFileDirectory)/build\teVirtualMIDI64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+
+			<AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)\build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+
+		<PostBuildEvent>
+			<!-- Copy dll to build path-->
+			<!--
+			<Command>xcopy /y /d "$(MSBuildThisFileDirectory)\build\msvc\x64\Release\portaudio_x64.dll" "$(OutDir)"</Command>
+			-->
+		</PostBuildEvent>
+
+	</ItemDefinitionGroup>
+</Project>

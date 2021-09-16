@@ -1,0 +1,25 @@
+{
+  "name": "cpp-tevirtualmidi",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+	"install": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CobraStas",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrionStas/cpp-tevirtualmidi.git"
+  },
+  "keywords": [
+    "cpp",
+    "virtual",
+    "midi"
+  ],
+  "bugs": {
+    "url": "https://github.com/OrionStas/cpp-tevirtualmidi/issues"
+  },
+  "homepage": "https://github.com/OrionStas/cpp-tevirtualmidi#readme",
+  "description": ""
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(SolutionDir)\settings.props" />
+
+	<PropertyGroup Label="Globals">
+		<VCProjectVersion>16.0</VCProjectVersion>
+		<Keyword>Win32Proj</Keyword>
+		<ProjectGuid>{ac809948-bd3d-44d4-87a8-f57cc9135222}</ProjectGuid>
+		<RootNamespace>test</RootNamespace>
+		<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup Label="UserMacros">
+    	<SourceRoot>$(SolutionDir)\src</SourceRoot>
+    	<HeaderRoot>$(SolutionDir)\includes</HeaderRoot>
+  	</PropertyGroup>
+
+	<ItemGroup>
+		<ClCompile Include="$(SourceRoot)\index.cpp" />
+	</ItemGroup>
+	
+	<Import Project="..\import.props" />
+</Project>
